@@ -42,11 +42,11 @@ class Cell:
         else:
             line_fill_colour = "red"
 
-        #cell1_center_x = 0
-        #cell1_centre_y = 0
-        #cell2_centre_x = 0
-        #cell2_centre_y = 0
+        cell1_center_x = (self._x1 + self._x2) / 2
+        cell1_centre_y = (self._y1 + self._y2) / 2
+        cell2_centre_x = (to_cell._x1 + to_cell._x2) / 2
+        cell2_centre_y = (to_cell._y1 + to_cell._y2) / 2
 
-        #line = Line(Point(cell1_center_x, cell1_centre_y), Point(cell2_centre_x, cell2_centre_y))
+        line = Line(Point(cell1_center_x, cell1_centre_y), Point(cell2_centre_x, cell2_centre_y))
 
-        #self._win.line_draw(line, line_fill_colour)
+        self._win.line_draw(line, line_fill_colour)
